@@ -1,21 +1,12 @@
+/* Общие стили */
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 html {
-  block-size: 100%;
-}
-
-.page {
-  inline-size: 1200px;
-  block-size: 100%;
-  margin: auto;
-  color: #fff;
-  font-family: 'Fira Sans Condensed', sans-serif;
-  font-size: 18px;
-  background-color: #1b1919;
+    block-size: 100%;
 }
 
 h1,
@@ -28,11 +19,41 @@ ol,
 li,
 blockquote,
 fieldset {
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
 }
 
 ul,
 ol {
-  list-style: none;
+    list-style: none;
+}
+
+.visually-hidden {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    inline-size: 1px;
+    block-size: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+}
+
+/* Основные блоки страницы */
+.page {
+    align-items: center;
+    background-color: #1B1919;
+    block-size: 100%;
+    color: #fff;
+    display: flex;
+    font-family: 'Fira Sans Condensed', sans-serif;
+    font-size: 18px;
+    inline-size: 1200px;
+    margin: auto;
+}
+
+.content {
+    align-items: flex-end;
+    column-gap: 30px;
+    display: flex;
+    padding: 133px 30px;
 }
