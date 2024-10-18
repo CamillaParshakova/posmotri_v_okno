@@ -57,3 +57,22 @@ ol {
     display: flex;
     padding: 133px 30px;
 }
+/* Блок результатов */
+.result {
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+}
+
+.result__video-container {
+    max-height: 386px;
+    max-width: 711px;
+    position: relative;
+}
+
+.result__video {
+    block-size: 100%;
+    inline-size: 100%;
+    object-fit: cover;
+    object-position: center;
+}
