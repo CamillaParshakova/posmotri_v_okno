@@ -66,9 +66,9 @@ ol {
 }
 
 .result__video-container {
+    position: relative;
     max-height: 386px;
     max-width: 711px;
-    position: relative;
 }
 
 .result__video {
@@ -146,6 +146,10 @@ ol {
     height: 19px;
     justify-self: center;
     width: 19px;
+}
+
+.search-form__label:has(.search-form__pseudo-checkbox):has(:hover) {
+    text-decoration: underline;
 }
 
 .search-form__checkbox:checked + .search-form__pseudo-checkbox {
